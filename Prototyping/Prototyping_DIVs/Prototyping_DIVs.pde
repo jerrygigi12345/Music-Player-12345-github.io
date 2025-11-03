@@ -33,5 +33,5 @@ rect(muteX, muteY, muteWidth, muteHeight);
 rect(lyrics-boxX, lyrics-boxY, lyrics-boxWidth, lyrics-boxHeight);
 rect(start-timeX, start-timeY, start-timeWidth, start-timeHeight);
 rect(end-timeX, end-timeY, end-timeWidth, end-timeHeight);
-rect(imageX, imageY, imageWidth, imageHeight);
-rect(imageX, imageY, imageWidth, imageHeight);
+rect(timelineX, timelineY, timelineWidth, timelineHeight);
+rect(playheadX, playheadY, playheadWidth, playheadHeight);
