@@ -82,35 +82,45 @@ float timeY = appHeight * 1/4;
 float timeWidth = appWidth * 1/2;
 float timeHeight = appHeight * 1/2;
 
-float imageX = appWidth * 1/4;
-float imageY = appHeight * 1/4;
-float imageWidth = appWidth * 1/2;
-float imageHeight = appHeight * 1/2;
+float repeatX = appWidth * 1/4;
+float repeatY = appHeight * 1/4;
+float repeatWidth = appWidth * 1/2;
+float repeatHeight = appHeight * 1/2;
 
-float imageX = appWidth * 1/4;
-float imageY = appHeight * 1/4;
-float imageWidth = appWidth * 1/2;
-float imageHeight = appHeight * 1/2;
+float randomX = appWidth * 1/4;
+float randomY = appHeight * 1/4;
+float randomWidth = appWidth * 1/2;
+float randomHeight = appHeight * 1/2;
 
-float imageX = appWidth * 1/4;
-float imageY = appHeight * 1/4;
-float imageWidth = appWidth * 1/2;
-float imageHeight = appHeight * 1/2;
+float muteX = appWidth * 1/4;
+float muteY = appHeight * 1/4;
+float muteWidth = appWidth * 1/2;
+float muteHeight = appHeight * 1/2;
 
-float imageX = appWidth * 1/4;
-float imageY = appHeight * 1/4;
-float imageWidth = appWidth * 1/2;
-float imageHeight = appHeight * 1/2;
+float lyrics-boxX = appWidth * 1/4;
+float lyrics-boxY = appHeight * 1/4;
+float lyrics-boxWidth = appWidth * 1/2;
+float lyrics-boxHeight = appHeight * 1/2;
 
-float imageX = appWidth * 1/4;
-float imageY = appHeight * 1/4;
-float imageWidth = appWidth * 1/2;
-float imageHeight = appHeight * 1/2;
+float start-timeX = appWidth * 1/4;
+float start-timeY = appHeight * 1/4;
+float start-timeWidth = appWidth * 1/2;
+float start-timeHeight = appHeight * 1/2;
 
-float imageX = appWidth * 1/4;
-float imageY = appHeight * 1/4;
-float imageWidth = appWidth * 1/2;
-float imageHeight = appHeight * 1/2;
+float end-timeX = appWidth * 1/4;
+float end-timeY = appHeight * 1/4;
+float end-timeWidth = appWidth * 1/2;
+float end-timeHeight = appHeight * 1/2;
+
+float timelineX = appWidth * 1/4;
+float timelineY = appHeight * 1/4;
+float timelineWidth = appWidth * 1/2;
+float timelineHeight = appHeight * 1/2;
+
+float playheadX = appWidth * 1/4;
+float playheadY = appHeight * 1/4;
+float playheadWidth = appWidth * 1/2;
+float playheadHeight = appHeight * 1/2;
 
 //
 rect(imageX, imageY, imageWidth, imageHeight);
