@@ -7,68 +7,68 @@ int appHeight = displayHeight;
 //rect(x, y, width, height);
 //Note: the debuggger expects rectangles to have float or double type variables
 //Using Ratios
-float imageX = appWidth * 1/4;
-float imageY = appHeight * 1/4;
-float imageWidth = appWidth * 1/2;
-float imageHeight = appHeight * 1/2;
+float imageX = appWidth * 2/24;
+float imageY = appHeight * 2.1/12;
+float imageWidth = appWidth * 8/24;
+float imageHeight = appHeight * 5/12;
 
-float stopX = appWidth * 1/4;
-float stopY = appHeight * 1/4;
-float stopWidth = appWidth * 1/2;
-float stopHeight = appHeight * 1/2;
+float stopX = appWidth * 1/24;
+float stopY = appHeight * 9.9/12;
+float stopWidth = appWidth * 1/24;
+float stopHeight = appHeight * 1/12;
 
-float playX = appWidth * 1/4;
-float playY = appHeight * 1/4;
-float playWidth = appWidth * 1/2;
-float playHeight = appHeight * 1/2;
+float playX = appWidth * 1/24;
+float playY = appHeight * 9.9/12;
+float playWidth = appWidth * 1/24;
+float playHeight = appHeight * 1/12;
 
-float closeX = appWidth * 1/4;
-float closeY = appHeight * 1/4;
-float closeWidth = appWidth * 1/2;
-float closeHeight = appHeight * 1/2;
+float closeX = appWidth * 22.5/24;
+float closeY = appHeight * 0.5/12;
+float closeWidth = appWidth * 1/24;
+float closeHeight = appHeight * 1/12;
 
-float forwardX = appWidth * 1/4;
-float forwardY = appHeight * 1/4;
-float forwardWidth = appWidth * 1/2;
-float forwardHeight = appHeight * 1/2;
+float forwardX = appWidth * 1/24;
+float forwardY = appHeight * 9.9/12;
+float forwardWidth = appWidth * 1/24;
+float forwardHeight = appHeight * 1/12;
 
-float reverseX = appWidth * 1/4;
-float reverseY = appHeight * 1/4;
-float reverseWidth = appWidth * 1/2;
-float reverseHeight = appHeight * 1/2;
+float reverseX = appWidth * 1/24;
+float reverseY = appHeight * 9.9/12;
+float reverseWidth = appWidth * 1/24;
+float reverseHeight = appHeight * 1/12;
 
-float fast-forwardX = appWidth * 1/4;
-float fast-forwardY = appHeight * 1/4;
-float fast-forwardWidth = appWidth * 1/2;
-float fast-forwardHeight = appHeight * 1/2;
+float fast-forwardX = appWidth * 1/24;
+float fast-forwardY = appHeight * 9.9/12;
+float fast-forwardWidth = appWidth * 1/24;
+float fast-forwardHeight = appHeight * 1/12;
 
-float rewindX = appWidth * 1/4;
-float rewindY = appHeight * 1/4;
-float rewindWidth = appWidth * 1/2;
-float rewindHeight = appHeight * 1/2;
+float rewindX = appWidth * 1/24;
+float rewindY = appHeight * 9.9/12;
+float rewindWidth = appWidth * 1/24;
+float rewindHeight = appHeight * 1/12;
 
-float artistX = appWidth * 1/4;
-float artistY = appHeight * 1/4;
-float artistWidth = appWidth * 1/2;
-float artistHeight = appHeight * 1/2;
+float artistX = appWidth * 14/24;
+float artistY = appHeight * 2.1/12;
+float artistWidth = appWidth * 1/24;
+float artistHeight = appHeight * 1/12;
 
-float lyricsX = appWidth * 1/4;
-float lyricsY = appHeight * 1/4;
-float lyricsWidth = appWidth * 1/2;
-float lyricsHeight = appHeight * 1/2;
+float lyricsX = appWidth * 1/24;
+float lyricsY = appHeight * 9.9/12;
+float lyricsWidth = appWidth * 1/24;
+float lyricsHeight = appHeight * 1/12;
 
-float loveX = appWidth * 1/4;
-float loveY = appHeight * 1/4;
-float loveWidth = appWidth * 1/2;
-float loveHeight = appHeight * 1/2;
+float loveX = appWidth * 21/24;
+float loveY = appHeight * 7.4/12;
+float loveWidth = appWidth * 1/24;
+float loveHeight = appHeight * 1/12;
 
-float settingsX = appWidth * 1/4;
-float settingsY = appHeight * 1/4;
-float settingsWidth = appWidth * 1/2;
-float settingsHeight = appHeight * 1/2;
+float settingsX = appWidth * 22.5/24;
+float settingsY = appHeight * 2/12;
+float settingsWidth = appWidth * 1/24;
+float settingsHeight = appHeight * 1/12;
 
-float accountX = appWidth * 1/4;
-float accountY = appHeight * 1/4;
+float accountX = appWidth * 0.5/24;
+float accountY = appHeight * 0.5/12;
 float accountWidth = appWidth * 1/2;
 float accountHeight = appHeight * 1/2;
 
@@ -107,8 +107,8 @@ float start-timeY = appHeight * 1/4;
 float start-timeWidth = appWidth * 1/2;
 float start-timeHeight = appHeight * 1/2;
 
-float end-timeX = appWidth * 1/4;
-float end-timeY = appHeight * 1/4;
+float end-timeX = appWidth * 21/24;
+float end-timeY = appHeight * 9/12;
 float end-timeWidth = appWidth * 1/2;
 float end-timeHeight = appHeight * 1/2;
 
