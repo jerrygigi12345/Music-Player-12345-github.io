@@ -107,10 +107,10 @@ float start_timeY = appHeight * 1/12;
 float start_timeWidth = appWidth * 1/24;
 float start_timeHeight = appHeight * 1/12;
 
-float end-timeX = appWidth * 21/24;
-float end-timeY = appHeight * 9/12;
-float end-timeWidth = appWidth * 1/24;
-float end-timeHeight = appHeight * 1/12;
+float end_timeX = appWidth * 21/24;
+float end_timeY = appHeight * 9/12;
+float end_timeWidth = appWidth * 1/24;
+float end_timeHeight = appHeight * 1/12;
 
 float timelineX = appWidth * 1/24;
 float timelineY = appHeight * 1/12;
