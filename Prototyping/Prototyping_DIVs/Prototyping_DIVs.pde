@@ -48,9 +48,9 @@ float previousWidth = appWidth * 1.5/24;
 float previousHeight = appHeight * 1/12;
 
 float artistX = appWidth * 14/24;
-float artistY = appHeight * 2.1/12;
-float artistWidth = appWidth * 1/24;
-float artistHeight = appHeight * 1/12;
+float artistY = appHeight * 3.7/12;
+float artistWidth = appWidth * 3/24;
+float artistHeight = appHeight * 1.6/12;
 
 float lyricsX = appWidth * 1/24;
 float lyricsY = appHeight * 9.9/12;
@@ -72,15 +72,15 @@ float accountY = appHeight * 0.5/12;
 float accountWidth = appWidth * 1/24;
 float accountHeight = appHeight * 1/12;
 
-float songX = appWidth * 1/24;
-float songY = appHeight * 1/12;
-float songWidth = appWidth * 1/24;
-float songHeight = appHeight * 1/12;
+float songX = appWidth * 14/24;
+float songY = appHeight * 2.1/12;
+float songWidth = appWidth * 3/24;
+float songHeight = appHeight * 1.6/12;
 
-float timeX = appWidth * 1/24;
-float timeY = appHeight * 1/12;
-float timeWidth = appWidth * 1/24;
-float timeHeight = appHeight * 1/12;
+float timeX = appWidth * 14/24;
+float timeY = appHeight * 5.3/12;
+float timeWidth = appWidth * 3/24;
+float timeHeight = appHeight * 1.7/12;
 
 float repeatX = appWidth * 1/24;
 float repeatY = appHeight * 1/12;
@@ -97,10 +97,10 @@ float muteY = appHeight * 1/12;
 float muteWidth = appWidth * 1/24;
 float muteHeight = appHeight * 1/12;
 
-float lyrics_boxX = appWidth * 1/24;
-float lyrics_boxY = appHeight * 1/12;
-float lyrics_boxWidth = appWidth * 1/24;
-float lyrics_boxHeight = appHeight * 1/12;
+float lyrics_boxX = appWidth * 17.1/24;
+float lyrics_boxY = appHeight * 2.1/12;
+float lyrics_boxWidth = appWidth * 5/24;
+float lyrics_boxHeight = appHeight * 5/12;
 
 float start_timeX = appWidth * 1/24;
 float start_timeY = appHeight * 1/12;
@@ -141,8 +141,8 @@ rect(timeX, timeY, timeWidth, timeHeight);
 rect(repeatX, repeatY, repeatWidth, repeatHeight);
 rect(randomX, randomY, randomWidth, randomHeight);
 rect(muteX, muteY, muteWidth, muteHeight);
-rect(lyrics-boxX, lyrics-boxY, lyrics-boxWidth, lyrics-boxHeight);
-rect(start-timeX, start-timeY, start-timeWidth, start-timeHeight);
-rect(end-timeX, end-timeY, end-timeWidth, end-timeHeight);
+rect(lyrics_boxX, lyrics_boxY, lyrics_boxWidth, lyrics_boxHeight);
+rect(start_timeX, start_timeY, start_timeWidth, start_timeHeight);
+rect(end_timeX, end_timeY, end_timeWidth, end_timeHeight);
 rect(timelineX, timelineY, timelineWidth, timelineHeight);
 rect(playheadX, playheadY, playheadWidth, playheadHeight);
