@@ -97,29 +97,29 @@ float muteY = appHeight * 1/12;
 float muteWidth = appWidth * 1/24;
 float muteHeight = appHeight * 1/12;
 
-float lyrics_boxX = appWidth * 17.1/24;
+float lyrics_boxX = appWidth * 17/24;
 float lyrics_boxY = appHeight * 2.1/12;
 float lyrics_boxWidth = appWidth * 5/24;
-float lyrics_boxHeight = appHeight * 5/12;
+float lyrics_boxHeight = appHeight * 4.9/12;
 
-float start_timeX = appWidth * 1/24;
-float start_timeY = appHeight * 1/12;
+float start_timeX = appWidth * 2/24;
+float start_timeY = appHeight * 9/12;
 float start_timeWidth = appWidth * 1/24;
-float start_timeHeight = appHeight * 1/12;
+float start_timeHeight = appHeight * 0.5/12;
 
 float end_timeX = appWidth * 21/24;
 float end_timeY = appHeight * 9/12;
 float end_timeWidth = appWidth * 1/24;
-float end_timeHeight = appHeight * 1/12;
+float end_timeHeight = appHeight * 0.5/12;
 
-float timelineX = appWidth * 1/24;
+float timelineX = appWidth * 2/24;
 float timelineY = appHeight * 1/12;
 float timelineWidth = appWidth * 1/24;
 float timelineHeight = appHeight * 1/12;
 
-float playheadX = appWidth * 1/24;
-float playheadY = appHeight * 1/12;
-float playheadWidth = appWidth * 1/24;
+float playheadX = appWidth * 3.7/24;
+float playheadY = appHeight * 8/12;
+float playheadWidth = appWidth * 0.3/24;
 float playheadHeight = appHeight * 1/12;
 
 //
