@@ -3,7 +3,7 @@
 */
 //
 //Display
-//fullScreen(); //Landscape
+fullScreen(); //Landscape
 size(500, 700); //Portrait
 int appWidth = displayWidth; //width
 int appHeight = displayHeight; //height
@@ -27,10 +27,17 @@ PImage image1 = loadImage( imagePathway1 );
 int imageWidth1 = 900; //Hardcoded
 int imageHeight1 = 600; //Hardcoded
 //Aspect Ratio
-float image1AspectRatio_GreaterOne = ( imageWidth1 >= imageHeight1 ) ? imageWidth1/imageHeight1 : ; //Ternary Operator
+float image1AspectRatio_GreaterOne = ( imageWidth1 >= imageHeight1 ) ? float(imageWidth1)/float(imageHeight1) : float(imageHeight1)/float(imageWidth1) ; //Ternary Operator
 //Hardcoded Greater-Than-One Aspect Ratio
-println(image1AspectRatio_GreaterOne);
+//How to make image bigger or smaller
+println("Aspect Ratio >1"image1AspectRatio_GreaterOne, "Testing for Decimals, form);
+//Algorithm Decisions (choice)
+//Aspect Ratio
+
+if () {} else {} //End IF Aspect Ratio
+
 //DIV
 rect( imageDivX, imageDivY, imageDivWidth, imageDivHeight )
 //
 image( image1, imageDivX, imageDivY, imageDivWidth, imageDivHeight );
+//image( image1, imageDivX, imageDivY, imageWidthAdjusted, imageHeightAdjusted ); 
