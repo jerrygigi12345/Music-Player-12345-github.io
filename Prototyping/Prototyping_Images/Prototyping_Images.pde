@@ -4,16 +4,16 @@
 //
 //Display
 fullScreen(); //Landscape
-size(500, 700); //Portrait
+//size(500, 700); //Portrait
 int appWidth = displayWidth; //width
 int appHeight = displayHeight; //height
 //println("Display VARS:", "appWidth:"+appWidth, "appHeight:"+appHeight, "\n\t\t\t\t\t\t\t\t\tFullScreen, displayWidth:"+displayWidth, "displayHeight:"+displayHeight, "\n\t\t\t\t\t\t\t\t\tSize\t\t, width:"+width, "height:"+height);
 //
 //Population
-float imageDivX = appWidth*1/4;
-float imageDivY = appHeight*1/10;
-float imageDivWidth = appWidth*1/2;
-float imageDivHeight = appHeight*4/5
+float imageDivX = appWidth * 2/24;
+float imageDivY = appHeight * 2.1/12;
+float imageDivWidth = appWidth * 8/24;
+float imageDivHeight = appHeight * 5/12;
 //Image Aspect Ratio Vars & Algorithm
 //Directory or Pathway, Concatenation
 String upArrow = "../../";
@@ -30,11 +30,17 @@ int imageHeight1 = 600; //Hardcoded
 float image1AspectRatio_GreaterOne = ( imageWidth1 >= imageHeight1 ) ? float(imageWidth1)/float(imageHeight1) : float(imageHeight1)/float(imageWidth1) ; //Ternary Operator
 //Hardcoded Greater-Than-One Aspect Ratio
 //How to make image bigger or smaller
-println("Aspect Ratio >1"image1AspectRatio_GreaterOne, "Testing for Decimals, form);
+//println("Aspect Ratio >1"image1AspectRatio_GreaterOne, "Testing for Decimals, form);
 //Algorithm Decisions (choice)
+//float imageWidthAdjusted = imageDivWidth
+//float imageHeightAdjusted = 
+
+
 //Aspect Ratio
 
 if () {} else {} //End IF Aspect Ratio
+
+
 
 //DIV
 rect( imageDivX, imageDivY, imageDivWidth, imageDivHeight )
