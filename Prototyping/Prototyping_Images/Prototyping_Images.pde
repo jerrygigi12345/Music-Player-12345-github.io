@@ -18,12 +18,13 @@ float imageDivHeight = appHeight * 5/12;
 //Directory or Pathway, Concatenation
 String upArrow = "../../";
 String folder = "Lesson Dependancies Folder/Images/";
-String bali = "bali";
+String bali = "Bali";
 String fileExtensionJPG = ".jpg";
 String imagePathway1 = upArrow + folder + bali + fileExtensionJPG;
 //println("Bali Pathway:", imagePathway1);
 //Image Loading & Aspect Ratio
-PImage image1 = loadImage( imagePathway1 );
+//
+PImage image1 = loadImage( imagePathway1 ); //i.e. pathway mispelled
 int imageWidth1 = 900; //Hardcoded
 int imageHeight1 = 600; //Hardcoded
 //Aspect Ratio
@@ -38,12 +39,12 @@ float imageHeightAdjusted1 = ( imageWidth1 >= imageDivWidth ) ? imageWidthAdjust
 
 //Aspect Ratio
 
-if () {} else {} //End IF Aspect Ratio
+//if () {} else {} //End IF Aspect Ratio
 
 
 
 //DIV
-rect( imageDivX, imageDivY, imageDivWidth, imageDivHeight )
+rect( imageDivX, imageDivY, imageDivWidth, imageDivHeight );
 //
 image( image1, imageDivX, imageDivY, imageDivWidth, imageDivHeight );
 //image( image1, imageDivX, imageDivY, imageWidthAdjusted, imageHeightAdjusted ); 
