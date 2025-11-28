@@ -25,7 +25,7 @@ float playHeight = appHeight * 1/12;
 float closeX = appWidth * 22.5/24;
 float closeY = appHeight * 0.5/12;
 float closeWidth = appWidth * 1/24;
-float closeHeight = appHeight * 1/12;
+float closeHeight = appHeight * 0.8/12;
 
 float forwardX = appWidth * 13.1/24;
 float forwardY = appHeight * 9.9/12;
@@ -52,25 +52,25 @@ float artistY = appHeight * 3.7/12;
 float artistWidth = appWidth * 3/24;
 float artistHeight = appHeight * 1.6/12;
 
-float lyricsX = appWidth * 1/24;
+float lyricsX = appWidth * 19.1/24;
 float lyricsY = appHeight * 9.9/12;
-float lyricsWidth = appWidth * 1/24;
-float lyricsHeight = appHeight * 0.5/12;
+float lyricsWidth = appWidth * 1.5/24;
+float lyricsHeight = appHeight * 1/12;
 
 float loveX = appWidth * 21/24;
 float loveY = appHeight * 7.4/12;
 float loveWidth = appWidth * 1/24;
-float loveHeight = appHeight * 1/12;
+float loveHeight = appHeight * 0.8/12;
 
 float settingsX = appWidth * 22.5/24;
-float settingsY = appHeight * 2/12;
+float settingsY = appHeight * 1.5/12;
 float settingsWidth = appWidth * 1/24;
-float settingsHeight = appHeight * 1/12;
+float settingsHeight = appHeight * 0.8/12;
 
 float accountX = appWidth * 0.5/24;
 float accountY = appHeight * 0.5/12;
 float accountWidth = appWidth * 1/24;
-float accountHeight = appHeight * 1/12;
+float accountHeight = appHeight * 0.8/12;
 
 float songX = appWidth * 14/24;
 float songY = appHeight * 2.1/12;
@@ -82,20 +82,20 @@ float timeY = appHeight * 5.3/12;
 float timeWidth = appWidth * 3/24;
 float timeHeight = appHeight * 1.7/12;
 
-float repeatX = appWidth * 1/24;
-float repeatY = appHeight * 1/12;
-float repeatWidth = appWidth * 1/24;
+float repeatX = appWidth * 17.1/24;
+float repeatY = appHeight * 9.9/12;
+float repeatWidth = appWidth * 1.5/24;
 float repeatHeight = appHeight * 1/12;
 
-float randomX = appWidth * 1/24;
-float randomY = appHeight * 1/12;
-float randomWidth = appWidth * 1/24;
+float randomX = appWidth * 5.1/24;
+float randomY = appHeight * 9.9/12;
+float randomWidth = appWidth * 1.5/24;
 float randomHeight = appHeight * 1/12;
 
-float muteX = appWidth * 1/24;
-float muteY = appHeight * 1/12;
+float muteX = appWidth * 22.5/24;
+float muteY = appHeight * 2.5/12;
 float muteWidth = appWidth * 1/24;
-float muteHeight = appHeight * 1/12;
+float muteHeight = appHeight * 0.8/12;
 
 float lyrics_boxX = appWidth * 17/24;
 float lyrics_boxY = appHeight * 2.1/12;
@@ -113,12 +113,12 @@ float end_timeWidth = appWidth * 1/24;
 float end_timeHeight = appHeight * 0.5/12;
 
 float timelineX = appWidth * 2/24;
-float timelineY = appHeight * 1/12;
-float timelineWidth = appWidth * 1/24;
-float timelineHeight = appHeight * 1/12;
+float timelineY = appHeight * 8.4/12;
+float timelineWidth = appWidth * 20/24;
+float timelineHeight = appHeight * 0.5/12;
 
 float playheadX = appWidth * 3.7/24;
-float playheadY = appHeight * 8/12;
+float playheadY = appHeight * 8.18/12;
 float playheadWidth = appWidth * 0.3/24;
 float playheadHeight = appHeight * 1/12;
 
