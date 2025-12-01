@@ -10,17 +10,17 @@ int appHeight = displayHeight; //height
 //println("Display VARS:", "appWidth:"+appWidth, "appHeight:"+appHeight, "\n\t\t\t\t\t\t\t\t\tFullScreen, displayWidth:"+displayWidth, "displayHeight:"+displayHeight, "\n\t\t\t\t\t\t\t\t\tSize\t\t, width:"+width, "height:"+height);
 //
 //Population
-float imageDivX = appWidth * 2/24;
-float imageDivY = appHeight * 2.1/12;
-float imageDivWidth = appWidth * 8/24;
-float imageDivHeight = appHeight * 5/12;
+float imageX = appWidth * 2/24;
+float imageY = appHeight * 2.1/12;
+float imageWidth = appWidth * 8/24;
+float imageHeight = appHeight * 5/12;
 //Image Aspect Ratio Vars & Algorithm
 //Directory or Pathway, Concatenation
 String upArrow = "../../";
 String folder = "Lesson Dependancies Folder/Images/";
-String bali = "Bali";
+String Bali = "Bali";
 String fileExtensionJPG = ".jpg";
-String imagePathway1 = upArrow + folder + bali + fileExtensionJPG;
+String imagePathway1 = upArrow + folder + Bali + fileExtensionJPG;
 //println("Bali Pathway:", imagePathway1);
 //Image Loading & Aspect Ratio
 //
@@ -46,7 +46,7 @@ float imageHeightAdjusted1 = ( imageWidth1 >= imageDivWidth ) ? imageWidthAdjust
 //DIV
 rect( imageDivX, imageDivY, imageDivWidth, imageDivHeight );
 //
-image( image1, imageDivX, imageDivY, imageDivWidth, imageDivHeight );
-//image( image1, imageDivX, imageDivY, imageWidthAdjusted, imageHeightAdjusted ); 
+//image( image1, imageDivX, imageDivY, imageDivWidth, imageDivHeight );
+image( image1, imageDivX, imageDivY, imageWidthAdjusted, imageHeightAdjusted ); 
 //
 //End Program
