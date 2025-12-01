@@ -33,8 +33,8 @@ float image1AspectRatio_GreaterOne = ( imageWidth1 >= imageHeight1 ) ? float(ima
 //How to make image bigger or smaller
 //println("Aspect Ratio >1"image1AspectRatio_GreaterOne, "Testing for Decimals, form);
 //Algorithm Decisions (choice)
-float imageWidthAdjusted1 = imageDivWidth;
-float imageHeightAdjusted1 = ( imageWidth1 >= imageDivWidth ) ? imageWidthAdjusted1 * image1AspectRatio_GreaterOne : imageWidthAdjusted1 / image1AspectRatio_GreaterOne ; //Ternary Operator
+float imageWidthAdjusted1 = imageWidth;
+float imageHeightAdjusted1 = ( imageWidth1 >= imageWidth ) ? imageWidthAdjusted1 * image1AspectRatio_GreaterOne : imageWidthAdjusted1 / image1AspectRatio_GreaterOne ; //Ternary Operator
 
 
 //Aspect Ratio
@@ -44,9 +44,9 @@ float imageHeightAdjusted1 = ( imageWidth1 >= imageDivWidth ) ? imageWidthAdjust
 
 
 //DIV
-rect( imageDivX, imageDivY, imageDivWidth, imageDivHeight );
+rect( imageX, imageY, imageWidth, imageHeight );
 //
 //image( image1, imageDivX, imageDivY, imageDivWidth, imageDivHeight );
-image( image1, imageDivX, imageDivY, imageWidthAdjusted, imageHeightAdjusted ); 
+image( image1, imageX, imageY, imageWidthAdjusted1, imageHeightAdjusted1 );
 //
 //End Program
