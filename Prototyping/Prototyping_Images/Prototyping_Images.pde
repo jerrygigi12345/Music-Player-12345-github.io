@@ -17,7 +17,7 @@ float imageHeight = appHeight * 5/12;
 //Image Aspect Ratio Vars & Algorithm
 //Directory or Pathway, Concatenation
 String upArrow = "../../";
-String folder = "Lesson Dependancies Folder/Images/";
+String folder = "Lesson Dependancy Folder/Pictures/";
 String Bali = "Bali";
 String fileExtensionJPG = ".jpg";
 String imagePathway1 = upArrow + folder + Bali + fileExtensionJPG;
