@@ -10,10 +10,20 @@ int appHeight = displayHeight; //height
 //println("\t\t\t\tFullScreen, displayWidth:\t"+displayWidth, "\tdisplayHeight:\t"+displayHeight, "\n\t\t\t\tSize\t, width:\t\t"+width, "\theight:\t\t"+height);
 //
 //Population
-float stringimageX = appWidth * 2/24;
-float stringimageY = appHeight * 2.1/12;
-float stringimageWidth = appWidth * 8/24;
-float stringimageHeight = appHeight * 5/12;
+float stringimageX1 = appWidth * 2/24;
+float stringimageY1 = appHeight * 2.1/12;
+float stringimageWidth1 = appWidth * 8/24;
+float stringimageHeight1 = appHeight * 5/12;
+
+float stringimageX2 = appWidth * 2/24;
+float stringimageY2 = appHeight * 2.1/12;
+float stringimageWidth2 = appWidth * 8/24;
+float stringimageHeight2 = appHeight * 5/12;
+
+float stringimageX3 = appWidth * 2/24;
+float stringimageY3 = appHeight * 2.1/12;
+float stringimageWidth3 = appWidth * 8/24;
+float stringimageHeight3 = appHeight * 5/12;
 //
 //Strings, Text, Literal
 String title = "Wahoo!";
@@ -41,9 +51,8 @@ fontSize = stringimageHeight*MicrosoftHimalayaAspectRatio;
 println("Microsoft Himalaya Aspect Ratio:", MicrosoftHimalayaAspectRatio);
 //
 //Note: DIV to "see" variables
-rect( stringimageX, stringimageY, stringimageWidth, stringimageHeight );
-rect( stringimageX, stringimageY, stringimageWidth, stringimageHeight );
-rect( stringimageX, stringimageY, stringimageWidth, stringimageHeight );
+
+
 //
 color pinkInk = #F793C4; //Hexidecimal
 color whiteInk = #FFFFFF;
