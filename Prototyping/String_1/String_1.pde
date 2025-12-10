@@ -17,17 +17,18 @@ float stringimageHeight = appHeight * 5/12;
 //
 //Strings, Text, Literal
 String title = "Wahoo!";
+/*Fonts from OS
 println("Start of Console"); //ERROR: in case CONSOLE Memory not enough
-//Fonts from OS
 String[] fontList = PFont.list(); //To list all fonts available on system
- printArray(fontList); //For listing all possible fonts to choose, then createFont
-//
+printArray(fontList); //For listing all possible fonts to choose, then createFont
+
+//Tools / Create Font / Find Font / Do not press "OK", known conflict between loadFont() and createFont()
+*/
 float fontSize = appHeight; //Entire Program
 PFont titleFont; //Font Var name
 String MicrosoftHimalaya = "Microsoft Himalaya";
 titleFont = createFont (MicrosoftHimalaya, fontSize);
-//Tools / Create Font / Find Font / Do not press "OK"
-//
+
 println(fontSize, MicrosoftHimalaya, titleFont);
 fontSize = 100.0;
 println("FontSize:", fontSize );
@@ -41,10 +42,19 @@ println("Microsoft Himalaya Aspect Ratio:", MicrosoftHimalayaAspectRatio);
 //
 //Note: DIV to "see" variables
 rect( stringimageX, stringimageY, stringimageWidth, stringimageHeight );
+rect( stringimageX, stringimageY, stringimageWidth, stringimageHeight );
+rect( stringimageX, stringimageY, stringimageWidth, stringimageHeight );
 //
 color pinkInk = #F793C4; //Hexidecimal
 color whiteInk = #FFFFFF;
 color resetInk = whiteInk;
 fill(pinkInk); //Ink, Grey Scale 0-255
 textFont(titleFont, fontSize);
+//WHILE Error Check
+//textFont() has option to combine font declaration with textSize()
+//textFont() is better for more than onePFont Variable
+//
 text( title, stringimageX, stringimageY, stringimageWidth, stringimageHeight );
+fill(resetInk);
+//
+//End Program
