@@ -31,7 +31,6 @@ String title = "Wahoo!";
 println("Start of Console"); //ERROR: in case CONSOLE Memory not enough
 String[] fontList = PFont.list(); //To list all fonts available on system
 printArray(fontList); //For listing all possible fonts to choose, then createFont
-
 //Tools / Create Font / Find Font / Do not press "OK", known conflict between loadFont() and createFont()
 */
 float fontSize = appHeight; //Entire Program
@@ -58,11 +57,18 @@ color pinkInk = #F793C4; //Hexidecimal
 color whiteInk = #FFFFFF;
 color resetInk = whiteInk;
 fill(pinkInk); //Ink, Grey Scale 0-255
+textAlign (CENTER, CENTER); //Align X&Y, see Processing.org / Reference
+//Values: [LEFT | CENTER | RIGHT] & [TOP | CENTER | BOTTOM | BASELINE]
 textFont(titleFont, fontSize);
-//WHILE Error Check
-//textFont() has option to combine font declaration with textSize()
-//textFont() is better for more than onePFont Variable
-//
+float constantDecrease = 0.99;
+int iWhile=0;
+while ( textWidth( title ) > stringDivWidth ) {
+  iWhile++;
+  //ERROR: infinite loop, requires exit() & println()
+  fontSize *= constantDecrease;
+  textFont(titleFont, fontSize);
+} //End WHILE Error Check Text-wrap
+println("Iterations of WHILE:", iWhile, "\tDifference of imageWidth & textWidth:", stringimageWidth-textWidth( title ), "\tUsing", constantDecrease*100+"%" );
 text( title, stringimageX, stringimageY, stringimageWidth, stringimageHeight );
 fill(resetInk);
 //
