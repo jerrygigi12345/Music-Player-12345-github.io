@@ -15,10 +15,10 @@ float stringimageY1 = appHeight * 2.1/12;
 float stringimageWidth1 = appWidth * 8/24;
 float stringimageHeight1 = appHeight * 5/12;
 
-float stringimageX2 = appWidth * 2/24;
-float stringimageY2 = appHeight * 2.1/12;
-float stringimageWidth2 = appWidth * 8/24;
-float stringimageHeight2 = appHeight * 5/12;
+float stringlyrics_boxX2 = appWidth * 2/24;
+float stringlyrics_boxY2 = appHeight * 2.1/12;
+float stringlyrics_boxWidth2 = appWidth * 8/24;
+float stringlyrics_boxHeight2 = appHeight * 5/12;
 
 float stringimageX3 = appWidth * 2/24;
 float stringimageY3 = appHeight * 2.1/12;
@@ -50,8 +50,8 @@ fontSize = stringimageHeight*MicrosoftHimalayaAspectRatio;
 println("Microsoft Himalaya Aspect Ratio:", MicrosoftHimalayaAspectRatio);
 //
 //Note: DIV to "see" variables
-
-
+rect(stringimageX1, stringimageY1, stringimageWidth1, stringimageHeight1);
+rect(stringimageX3, stringimageY3, stringimageWidth3, stringimageHeight3);
 //
 color pinkInk = #F793C4; //Hexidecimal
 color whiteInk = #FFFFFF;
