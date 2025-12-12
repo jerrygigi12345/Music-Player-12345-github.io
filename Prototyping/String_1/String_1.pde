@@ -31,6 +31,7 @@ String title = "Wahoo!";
 println("Start of Console"); //ERROR: in case CONSOLE Memory not enough
 String[] fontList = PFont.list(); //To list all fonts available on system
 printArray(fontList); //For listing all possible fonts to choose, then createFont
+//Spelling Counts and must compare CONSOLE v Tools / Create Font / Create Font Spelling
 //Tools / Create Font / Find Font / Do not press "OK", known conflict between loadFont() and createFont()
 */
 float fontSize = appHeight; //Entire Program
@@ -51,6 +52,7 @@ println("Microsoft Himalaya Aspect Ratio:", MicrosoftHimalayaAspectRatio);
 //
 //Note: DIV to "see" variables
 rect(stringimageX1, stringimageY1, stringimageWidth1, stringimageHeight1);
+rect(stringlyrics_boxX2, stringlyrics_boxY2, stringlyrics_boxWidth2, stringlyrics_boxHeight2);
 rect(stringimageX3, stringimageY3, stringimageWidth3, stringimageHeight3);
 //
 color pinkInk = #F793C4; //Hexidecimal
