@@ -7,7 +7,8 @@ fullScreen(); //Landscape
 //size(500, 700); //Portrait
 int appWidth = displayWidth; //width
 int appHeight = displayHeight; //height
-//println("Display VARS:", "appWidth:"+appWidth, "appHeight:"+appHeight, "\n\t\t\t\t\t\t\t\t\tFullScreen, displayWidth:"+displayWidth, "displayHeight:"+displayHeight, "\n\t\t\t\t\t\t\t\t\tSize\t\t, width:"+width, "height:"+height);
+//println("Display VARS:", "appWidth:"+appWidth, "appHeight:"+appHeight);
+//println("\t\t\t\tFullScreen, displayWidth:\t"+displayWidth, "\tdisplayHeight:\t"+displayHeight, "\n\t\t\t\tSize\t, width:\t\t"+width, "\theight:\t\t"+height);
 //
 //Population
 float imageX = appWidth * 2/24;
