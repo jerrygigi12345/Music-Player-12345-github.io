@@ -10,20 +10,23 @@ int appHeight = displayHeight; //height
 //println("\t\t\t\tFullScreen, displayWidth:\t"+displayWidth, "\tdisplayHeight:\t"+displayHeight, "\n\t\t\t\tSize\t, width:\t\t"+width, "\theight:\t\t"+height);
 //
 //Population
-float stringimageX1 = appWidth * 2/24;
-float stringimageY1 = appHeight * 2.1/12;
-float stringimageWidth1 = appWidth * 8/24;
-float stringimageHeight1 = appHeight * 5/12;
-
-float stringlyrics_boxX2 = appWidth * 2/24;
-float stringlyrics_boxY2 = appHeight * 2.1/12;
-float stringlyrics_boxWidth2 = appWidth * 8/24;
-float stringlyrics_boxHeight2 = appHeight * 5/12;
-
-float stringimageX3 = appWidth * 2/24;
-float stringimageY3 = appHeight * 2.1/12;
-float stringimageWidth3 = appWidth * 8/24;
-float stringimageHeight3 = appHeight * 5/12;
+int numberOfDIVs = 3;
+float[] stringRectX = new float[numberOfDIVs];
+float[] stringRectY = new float[numberOfDIVs];
+float[] stringRectWidth = new float[numberOfDIVs];
+float[] stringRectHeight = new float[numberOfDIVs];
+stringRectX[0] = appWidth*1/4; //**Akward DIV
+stringRectY[0] = appHeight*1/10;
+stringRectWidth[0] = appWidth*1/2;
+stringRectHeight[0] = appHeight*1/10; // ** Make smaller to test height
+stringRectX[1] = stringDivX[0]; //Cascading VARs
+stringRectY[1] = appHeight*3/10;
+stringRectWidth[1] = appWidth*1/4;
+stringRectHeight[1] = stringDivHeight[0]; //Cascading VARs
+stringRectX[2] = stringDivX[0]; //Cascading VARs, best practice
+stringRectY[2] = appHeight*5/10;
+stringRectWidth[2] = appWidth*5/8;
+stringRectHeight[2] = stringDivHeight[0]; //Cascading VARs, best practice
 //
 //Strings, Text, Literal
 String title = "Wahoo!";
@@ -46,13 +49,13 @@ println("FontSize:", fontSize );
 - choose Aspect Ratio that must be multiplied: fontSize/titleHeight
 - Rewriting fontSize with formula
 */
-float MicrosoftHimalayaAspectRatio = fontSize / stringimageHeight;
-fontSize = stringimageHeight*MicrosoftHimalayaAspectRatio;
+float MicrosoftHimalayaAspectRatio = fontSize / stringimageHeight1;
+fontSize = stringimageHeight1*MicrosoftHimalayaAspectRatio;
 println("Microsoft Himalaya Aspect Ratio:", MicrosoftHimalayaAspectRatio);
 //
 //Note: DIV to "see" variables
 rect(stringimageX1, stringimageY1, stringimageWidth1, stringimageHeight1);
-rect(stringlyrics_boxX2, stringlyrics_boxY2, stringlyrics_boxWidth2, stringlyrics_boxHeight2);
+rect(stringimageX2, stringimageY2, stringimageWidth2, stringimageHeight2);
 rect(stringimageX3, stringimageY3, stringimageWidth3, stringimageHeight3);
 //
 color pinkInk = #F793C4; //Hexidecimal
@@ -64,13 +67,13 @@ textAlign (CENTER, CENTER); //Align X&Y, see Processing.org / Reference
 textFont(titleFont, fontSize);
 float constantDecrease = 0.99;
 int iWhile=0;
-while ( textWidth( title ) > stringDivWidth ) {
+while ( textWidth( title ) > stringimageWidth1 ) {
   iWhile++;
   //ERROR: infinite loop, requires exit() & println()
   fontSize *= constantDecrease;
   textFont(titleFont, fontSize);
 } //End WHILE Error Check Text-wrap
-println("Iterations of WHILE:", iWhile, "\tDifference of imageWidth & textWidth:", stringimageWidth-textWidth( title ), "\tUsing", constantDecrease*100+"%" );
+println("Iterations of WHILE:", iWhile, "\tPixel difference of imageWidth & textWidth:", stringimageWidth-textWidth( title ), "\tUsing", constantDecrease*100+"%" );
 text( title, stringimageX, stringimageY, stringimageWidth, stringimageHeight );
 fill(resetInk);
 //
