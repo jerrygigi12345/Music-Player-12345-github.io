@@ -16,12 +16,29 @@ int appHeight = displayHeight;
 //rect(x, y, width, height);
 //Note: the debuggger expects rectangles to have float or double type variables
 //Using Ratios
+
+float stopX = appWidth * 3.2/24;
+float stopY = appHeight * 9.9/12;
+float stopWidth = appWidth * 1.5/24;
+float stopHeight = appHeight * 1/12;
+float stop1X =  stopX + stopWidth * 1/4;
+float stop1Y = stopY + stopHeight * 1/4;
+float stop1Width = stopWidth * 2/4;
+float stop1Height = stopHeight * 2/4;
+//
+float randomX = appWidth * 5.1/24;
+float randomY = appHeight * 9.9/12;
+float randomWidth = appWidth * 1.5/24;
+float randomHeight = appHeight * 1/12;
+//
 float imageX = appWidth * 1/4;
 float imageY = appHeight * 1/4;
 float imageWidth = appWidth * 1/2;
 float imageHeight = appHeight * 1/2;
 //
 rect(imageX, imageY, imageWidth, imageHeight);
+rect(stopX, stopY, stopWidth, stopHeight);
+rect(stop1X, stop1Y, stop1Width, stop1Height);
 //
 //square(nameX, nameY, nameDimension);
 //line(nameX1, nameY1, nameX2, nameY2);
