@@ -34,9 +34,9 @@ int appHeight = height;
 //
 //Music Loading - STRUCTURED Review
 minim = new Minim(this);
-
-
-
+String upArrow = "../../"
+String musicFolder = "Music/"
+String normalFolder
 
 playList[ currentSong ] = minim.loadFile( file ); //ERROR: Verify Spelling & Library installed, Sketch / Import Library
 //
