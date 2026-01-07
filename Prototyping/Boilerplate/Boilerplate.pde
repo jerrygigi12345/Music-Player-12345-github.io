@@ -1,6 +1,6 @@
-
-
-
+/*Hearing Music and Sound Effects
+- Reading Code with CTRL-T & braces
+*/
 //Library - Minim
 import ddf.minim.*;
 import ddf.minim.analysis.*;
