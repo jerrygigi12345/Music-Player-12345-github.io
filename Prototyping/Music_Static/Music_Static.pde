@@ -36,7 +36,8 @@ int appHeight = height;
 minim = new Minim(this);
 String upArrow = "../../";
 String musicFolder = "Music/"; //Developer Secific
-String songName1 = "Cheri Cheri Lady";
+String songName1 = "The_Simplest";
+String soundEffect1 = "Car_Door_Closing";
 String fileExtension_mp3 = ".mp3";
 //
 String musicDirectory = upArrow + musicFolder; //Concatenation
@@ -50,3 +51,4 @@ if ( playList[currentSong]==null){ //ERROR, play list is Null
   //see FILE or minim.loadFile
   println("Did this music and sound load properly");
   printArray(playList);
+}
