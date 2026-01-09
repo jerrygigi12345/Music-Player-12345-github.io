@@ -36,7 +36,18 @@ float imageY = appHeight * 1/4;
 float imageWidth = appWidth * 1/2;
 float imageHeight = appHeight * 1/2;
 //
+float playX = appWidth * 11.1/24;
+float playY = appHeight * 9.9/12;
+float playWidth = appWidth * 1.5/24;
+float playHeight = appHeight * 1/12;
+float play1X = playX + playWidth * 1/4;
+float play1Y = playY + playHeight * 1/4;
+float play1Width = stopWidth * 2/4;
+float play1Height =
+//
 rect(imageX, imageY, imageWidth, imageHeight);
+rect(playX, playY, playWidth, playHeight);
+rect(play1X, play1Y, play1Width, play1Height);
 rect(stopX, stopY, stopWidth, stopHeight);
 rect(stop1X, stop1Y, stop1Width, stop1Height);
 //
