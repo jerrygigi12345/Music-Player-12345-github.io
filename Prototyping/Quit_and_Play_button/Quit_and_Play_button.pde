@@ -37,11 +37,13 @@ void setup() {
   
   //Population
   //Color Population
-  color black = 0; //Gray Scale
+  color black = 0; //Gray Scale, much smaller color, 256 bits
   color white = 0; //Gray Scale
   //CANVAS: default background and ink
   resetBackground = white;
   resetInk = black;
+  color orange = #FF4B27;
+  color blue = #5DC7FF;
 void setup() {} //End setup
 //
 void draw() {} //End draw
