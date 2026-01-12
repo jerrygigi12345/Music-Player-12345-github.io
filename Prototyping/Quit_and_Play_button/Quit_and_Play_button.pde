@@ -44,6 +44,7 @@ void setup() {
   resetInk = black;
   color orange = #FF4B27;
   color blue = #5DC7FF;
+  color grayScale = 256/2
 void setup() {} //End setup
 //
 void draw() {} //End draw
