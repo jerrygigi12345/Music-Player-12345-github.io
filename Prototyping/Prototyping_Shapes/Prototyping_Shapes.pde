@@ -47,7 +47,7 @@ float play1Height = stopHeight * 2/4;
 //
 rect(imageX, imageY, imageWidth, imageHeight);
 rect(playX, playY, playWidth, playHeight);
-rect(play1X, play1Y, play1Width, play1Height);
+triangle(playX1, playY1, playX2, playY2, playX3, playY3);
 rect(stopX, stopY, stopWidth, stopHeight);
 rect(stop1X, stop1Y, stop1Width, stop1Height);
 //
