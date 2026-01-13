@@ -42,6 +42,7 @@ void setup() {
   //CANVAS: default background and ink
   resetBackground = white;
   resetInk = black;
+  //Button Colours
   color orange = #FF4B27;
   color blue = #5DC7FF;
   color grayScale = 256/2
