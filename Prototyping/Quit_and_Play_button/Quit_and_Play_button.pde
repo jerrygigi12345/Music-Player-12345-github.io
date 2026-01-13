@@ -49,11 +49,11 @@ void setup() {
   color grayScale = 256/2; //Example Gray Scale, small memory
   color gray = #B9B9B9; //Example Gray Scale, large memory
   playColourBackground = blue;
-  playColourSymbol = yellow;
-  playColourBackgroundActivated = yellow;
-  playColourSymbolActivated = purple;
+  playColourSymbol = green;
+  playColourBackgroundActivated = green;
+  playColourSymbolActivated = blue;
   quitBackground = white;
-  quitBackgroundActivated = red;
+  quitBackgroundActivated = orange;
     //
 } //End setup
 //
