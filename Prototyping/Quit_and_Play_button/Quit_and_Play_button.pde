@@ -27,6 +27,7 @@ void setup() {
   appWidth = width;
   appHeight = height;
   //
+  //Population
   float closeX = appWidth * 22.5/24;
   float closeY = appHeight * 0.5/12;
   float closeWidth = appWidth * 1/24;
@@ -58,11 +59,10 @@ void setup() {
   line(closeX3, closeY3, closeX4, closeY4);
   rect(playX, playY, playWidth, playHeight);
   triangle(playX1, playY1, playX2, playY2, playX3, playY3);
-  
-  //Population
+  //
   //Color Population
   color black = 0; //Gray Scale, much smaller color, 256 bits
-  color white = 0; //Gray Scale
+  color white = 255; //Gray Scale
   //CANVAS: default background and ink
   resetBackground = white;
   resetInk = black;
