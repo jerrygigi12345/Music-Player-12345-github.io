@@ -14,11 +14,17 @@
 //
 //Global Variables
 int appWidth, appHeight;
-float quitDivX, quitDivY, quitDivWidth, quitDivHeight;
+float closeX, closeY, closeWidth, closeHeight;
+float closeX1, closeY1, closeX2, closeY2;
+float closeX3, closeY3, closeX4, closeY4;
 float playDivX, playDivY, playDivWidth, playDivHeight;
-float playSymbolX1, playSymbolY1, playSymbolX2, playSymbolY2, playSymbolX3, playSymbolY3;
+float playX1, playY1, playX2, playY2, playX3, playY3;
 //
 Boolean playButton=false;
+//
+color resetBackground, resetInk;
+color playColourBackground, playColourSymbol, playColourBackgroundActivated, playColourSymbolActivated;
+color quitBackground, quitBackgroundActivated;
 //
 void setup() {
   //Display
@@ -28,19 +34,19 @@ void setup() {
   appHeight = height;
   //
   //Population
-  float closeX = appWidth * 22.5/24;
-  float closeY = appHeight * 0.5/12;
-  float closeWidth = appWidth * 1/24;
-  float closeHeight = appHeight * 0.8/12;
+  closeX = appWidth * 22.5/24;
+  closeY = appHeight * 0.5/12;
+  closeWidth = appWidth * 1/24;
+  closeHeight = appHeight * 0.8/12;
   //
-  float closeX1 = closeX + closeWidth * 1/4;
-  float closeY1 = closeY + closeHeight * 1/4;
-  float closeX2 = closeX + closeWidth * 3/4;
-  float closeY2 = closeY + closeHeight * 3/4;
-  float closeX3 = closeX + closeWidth * 3/4;
-  float closeY3 = closeY + closeHeight * 1/4;
-  float closeX4 = closeX + closeWidth * 1/4;
-  float closeY4 = closeY + closeHeight * 3/4;
+  closeX1 = closeX + closeWidth * 1/4;
+  closeY1 = closeY + closeHeight * 1/4;
+  closeX2 = closeX + closeWidth * 3/4;
+  closeY2 = closeY + closeHeight * 3/4;
+  closeX3 = closeX + closeWidth * 3/4;
+  closeY3 = closeY + closeHeight * 1/4;
+  closeX4 = closeX + closeWidth * 1/4;
+  closeY4 = closeY + closeHeight * 3/4;
   //
   float playX = appWidth * 11.1/24;
   float playY = appHeight * 9.9/12;
