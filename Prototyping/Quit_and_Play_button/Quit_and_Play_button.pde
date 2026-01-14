@@ -27,13 +27,37 @@ void setup() {
   appWidth = width;
   appHeight = height;
   //
-  
-  
-  
-  
-  
-  
-  
+  float closeX = appWidth * 22.5/24;
+  float closeY = appHeight * 0.5/12;
+  float closeWidth = appWidth * 1/24;
+  float closeHeight = appHeight * 0.8/12;
+  //
+  float closeX1 = closeX + closeWidth * 1/4;
+  float closeY1 = closeY + closeHeight * 1/4;
+  float closeX2 = closeX + closeWidth * 3/4;
+  float closeY2 = closeY + closeHeight * 3/4;
+  float closeX3 = closeX + closeWidth * 3/4;
+  float closeY3 = closeY + closeHeight * 1/4;
+  float closeX4 = closeX + closeWidth * 1/4;
+  float closeY4 = closeY + closeHeight * 3/4;
+  //
+  float playX = appWidth * 11.1/24;
+  float playY = appHeight * 9.9/12;
+  float playWidth = appWidth * 1.5/24;
+  float playHeight = appHeight * 1/12;
+  //
+  float playX1 = playX + playWidth * 1/4;
+  float playY1 = playY + playHeight * 1/4;
+  float playX2 = playX + playWidth * 3/4;
+  float playY2 = playY + playHeight * 1/2;
+  float playX3 = playX + playWidth * 1/4;
+  float playY3 = playY + playHeight * 3/4;
+  //DIVs
+  rect(closeX, closeY, closeWidth, closeHeight);
+  line(closeX1, closeY1, closeX2, closeY2);
+  line(closeX3, closeY3, closeX4, closeY4);
+  rect(playX, playY, playWidth, playHeight);
+  triangle(playX1, playY1, playX2, playY2, playX3, playY3);
   
   //Population
   //Color Population
