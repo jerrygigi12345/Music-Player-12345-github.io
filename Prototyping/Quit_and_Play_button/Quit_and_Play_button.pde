@@ -17,14 +17,16 @@ int appWidth, appHeight;
 float closeX, closeY, closeWidth, closeHeight;
 float closeX1, closeY1, closeX2, closeY2;
 float closeX3, closeY3, closeX4, closeY4;
-float playDivX, playDivY, playDivWidth, playDivHeight;
+float playX, playY, playWidth, playHeight;
 float playX1, playY1, playX2, playY2, playX3, playY3;
 //
-Boolean playButton=false;
+Boolean playButton=false, closeButton=false;
 //
-color resetBackground, resetInk;
+color resetBackground, resetInk, resetBackgroundDay, resetInkDay, resetBackgroundNight, resetInkNight;
+color closeButtonInk;
 color playColourBackground, playColourSymbol, playColourBackgroundActivated, playColourSymbolActivated;
-color quitBackground, quitBackgroundActivated;
+color closeBackground, closeBackgroundActivated;
+Boolean nightMode=false;
 //
 void setup() {
   //Display
@@ -82,33 +84,33 @@ void setup() {
   playColourSymbol = green;
   playColourBackgroundActivated = green;
   playColourSymbolActivated = blue;
-  quitBackground = white;
-  quitBackgroundActivated = orange;
+  closeBackground = white;
+  closeBackgroundActivated = orange;
     //
 } //End setup
 //
 void draw() {
   //println ("My Mouse is", mouseX, mouseY);
   //Button HoverOver
-  if ( mouseX>playDivX && mouseX<playDivX+playDivWidth && mouseY>playDivY && mouseY<playDivY+playDivHeight ) {
+  if ( mouseX>playX && mouseX<playX+playWidth && mouseY>playY && mouseY<playY+playHeight ) {
     //println("Wahoo! I'm playing you");
     playButton = true;
     fill(playColourBackgroundActivated);
-    rect(playDivX, playDivY, playDivWidth, playDivHeight);
+    rect(playX, playY, playWidth, playHeight);
     fill(playColourSymbolActivated);
-    triangle(playSymbolX1, playSymbolY1, playSymbolX2, playSymbolY2, playSymbolX3, playSymbolY3);
+    triangle(playX1, playY1, playX2, playY2, playX3, playY3);
     fill(resetBackground);
   } else {
     //print(" ");
     playButton = false;
     fill(playColourBackground);
-    rect(playDivX, playDivY, playDivWidth, playDivHeight);
+    rect(playX, playY, playWidth, playHeight);
     fill(playColourSymbol);
-    triangle(playSymbolX1, playSymbolY1, playSymbolX2, playSymbolY2, playSymbolX3, playSymbolY3);
+    triangle(playX1, playY1, playX2, playY2, playX3, playY3);
     fill(resetBackground);
   }//End Play Button Hover Over
-  if ( mouseX>quitDivX && mouseX<quitDivX+quitDivWidth && mouseY>quitDivY &&mouseY<quitDivY+quitDivHeight ) {
-    fill(quitBackgroundActivated);
+  if ( mouseX>closeX && mouseX<closeX+closeWidth && mouseY>closeY &&mouseY<closeY+closeHeight ) {
+    fill(closeBackgroundActivated);
     rect(quitDivX, quitDivY, quitDivWidth, quitDivHeight);
     fill(resetBackground);
   } else {
@@ -120,6 +122,12 @@ void draw() {
 } //End draw
 //
 void mousePressed() {
+  //Quit Button: does not use Boolean, only mouseX&Y already present in system key variables
+  if ( mouseX>quitDivX && mouseX<quitDivX+quitDivWidth && mouseY>quitDivY &&mouseY<quitDivY+quitDivHeight ) {
+    noLoop(); //Adjusts the exit of the program using finishing draw()
+    exit(); //With noLoop(), exit happens here
+    println("Final Line of mousePressed and finishes draw()");
+  }
   //Music Play Functions
   if ( playButton == true ) {
     println("Play My Song");
