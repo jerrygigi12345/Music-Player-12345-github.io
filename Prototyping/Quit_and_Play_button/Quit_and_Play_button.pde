@@ -111,11 +111,11 @@ void draw() {
   }//End Play Button Hover Over
   if ( mouseX>closeX && mouseX<closeX+closeWidth && mouseY>closeY &&mouseY<closeY+closeHeight ) {
     fill(closeBackgroundActivated);
-    rect(quitDivX, quitDivY, quitDivWidth, quitDivHeight);
+    rect(closeX, closeY, closeWidth, closeHeight);
     fill(resetBackground);
   } else {
-    fill(quitBackground);
-    rect(quitDivX, quitDivY, quitDivWidth, quitDivHeight);
+    fill(closeBackground);
+    rect(closeX, closeY, closeWidth, closeHeight);
     fill(resetBackground);
   }//End Quit Button Hover Over
   //
@@ -123,7 +123,7 @@ void draw() {
 //
 void mousePressed() {
   //Quit Button: does not use Boolean, only mouseX&Y already present in system key variables
-  if ( mouseX>quitDivX && mouseX<quitDivX+quitDivWidth && mouseY>quitDivY &&mouseY<quitDivY+quitDivHeight ) {
+  if ( mouseX>closeX && mouseX<closeX+closeWidth && mouseY>closeY &&mouseY<quitDivY+quitDivHeight ) {
     noLoop(); //Adjusts the exit of the program using finishing draw()
     exit(); //With noLoop(), exit happens here
     println("Final Line of mousePressed and finishes draw()");
