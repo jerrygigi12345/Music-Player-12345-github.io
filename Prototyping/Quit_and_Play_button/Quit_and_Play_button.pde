@@ -50,17 +50,17 @@ void setup() {
   closeX4 = closeX + closeWidth * 1/4;
   closeY4 = closeY + closeHeight * 3/4;
   //
-  float playX = appWidth * 11.1/24;
-  float playY = appHeight * 9.9/12;
-  float playWidth = appWidth * 1.5/24;
-  float playHeight = appHeight * 1/12;
+  playX = appWidth * 11.1/24;
+  playY = appHeight * 9.9/12;
+  playWidth = appWidth * 1.5/24;
+  playHeight = appHeight * 1/12;
   //
-  float playX1 = playX + playWidth * 1/4;
-  float playY1 = playY + playHeight * 1/4;
-  float playX2 = playX + playWidth * 3/4;
-  float playY2 = playY + playHeight * 1/2;
-  float playX3 = playX + playWidth * 1/4;
-  float playY3 = playY + playHeight * 3/4;
+  playX1 = playX + playWidth * 1/4;
+  playY1 = playY + playHeight * 1/4;
+  playX2 = playX + playWidth * 3/4;
+  playY2 = playY + playHeight * 1/2;
+  playX3 = playX + playWidth * 1/4;
+  playY3 = playY + playHeight * 3/4;
   //DIVs
   rect(closeX, closeY, closeWidth, closeHeight);
   line(closeX1, closeY1, closeX2, closeY2);
@@ -122,7 +122,7 @@ void draw() {
 } //End draw
 //
 void mousePressed() {
-  //Quit Button: does not use Boolean, only mouseX&Y already present in system key variables
+  //Close Button: does not use Boolean, only mouseX&Y already present in system key variables
   if ( mouseX>closeX && mouseX<closeX+closeWidth && mouseY>closeY &&mouseY<quitDivY+quitDivHeight ) {
     noLoop(); //Adjusts the exit of the program using finishing draw()
     exit(); //With noLoop(), exit happens here
