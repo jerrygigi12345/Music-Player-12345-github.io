@@ -69,23 +69,47 @@ void setup() {
   triangle(playX1, playY1, playX2, playY2, playX3, playY3);
   //
   //Color Population
+  nightMode=false;
   color black = 0; //Gray Scale, much smaller color, 256 bits
   color white = 255; //Gray Scale
+  color grayScale = 256/2; //Example Gray Scale, small memory
+  color gray = #B9B9B9; //Example Gray Scale, large memory
   //CANVAS: default background and ink
-  resetBackground = white;
-  resetInk = black;
-  //Button Colours
+  resetBackgroundDay = white;
+  resetInkDay = black;
+  resetBackgroundNight = 256/4;
+  resetInkNight = int(256*0.75); // 3/4 of origoinal, not 1/4
+  //println("Casting answer is:", resetInkNight); //Exactly 192, no rounding invovled, checked on calculator
+  //Button Colours: layering local variables leads to preferences controled by Booleans
   color orange = #FF4B27;
   color blue = #5DC7FF;
   color green = #66D329;
-  color grayScale = 256/2; //Example Gray Scale, small memory
-  color gray = #B9B9B9; //Example Gray Scale, large memory
-  playColourBackground = blue;
-  playColourSymbol = green;
-  playColourBackgroundActivated = green;
-  playColourSymbolActivated = blue;
-  closeBackground = white;
-  closeBackgroundActivated = orange;
+  color darkGray = grayScale;
+  color ligthGray = gray;
+  //Note: able to use a Ternary Operator but ineffiecient
+  if ( nightMode == true ) {
+    resetBackground = resetBackgroundNight;
+    resetInk = resetInkNight;
+    playColourBackground = darkGray;
+    playColourSymbol = ligthGray;
+    playColourBackgroundActivated = ligthGray;
+    playColourSymbolActivated = darkGray;
+    quitBackground = ligthGray;
+    quitBackgroundActivated = red;
+    quitButtonInk = darkGray;
+  } else
+  {
+    //Previously the Day Colour Assignments
+    resetBackground = resetBackgroundDay;
+    resetInk = black;
+    playColourBackground = blue;
+    playColourSymbol = green;
+    playColourBackgroundActivated = green;
+    playColourSymbolActivated = blue;
+    closeBackground = white;
+    closeBackgroundActivated = orange;
+    closeButtonInk = black;
+  } //End Night Mode Colors
     //
 } //End setup
 //
@@ -123,7 +147,7 @@ void draw() {
 //
 void mousePressed() {
   //Close Button: does not use Boolean, only mouseX&Y already present in system key variables
-  if ( mouseX>closeX && mouseX<closeX+closeWidth && mouseY>closeY &&mouseY<quitDivY+quitDivHeight ) {
+  if ( mouseX>closeX && mouseX<closeX+closeWidth && mouseY>closeY &&mouseY<closeY+closeHeight ) {
     noLoop(); //Adjusts the exit of the program using finishing draw()
     exit(); //With noLoop(), exit happens here
     println("Final Line of mousePressed and finishes draw()");
