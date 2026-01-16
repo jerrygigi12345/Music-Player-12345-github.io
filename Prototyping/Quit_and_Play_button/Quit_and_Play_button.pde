@@ -141,7 +141,19 @@ void draw() {
     fill(closeBackground);
     rect(closeX, closeY, closeWidth, closeHeight);
     fill(resetBackground);
-  }//End Quit Button Hover Over
+    fill(quitButtonInk);
+    //Note: rect() starts top-right corner, text() starts bottom-right corner
+   text("X", quitDivX+quitDivWidth*1/2, quitDivY+quitDivHeight*3/5); //adjust fractions or decimals until working
+    fill(resetInk);
+  } else {
+    fill(quitBackground);
+    rect(quitDivX, quitDivY, quitDivWidth, quitDivHeight);
+    fill(resetBackground);
+    fill(quitButtonInk);
+    //Note: rect() starts top-right corner, text() starts bottom-right corner
+    text("X", quitDivX+quitDivWidth*1/2, quitDivY+quitDivHeight*3/5); //adjust fractions or decimals until working
+    fill(resetInk);
+  }//End Close Button Hover Over
   //
 } //End draw
 //
